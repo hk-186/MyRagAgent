@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 测试 / 工具缓存
+.pytest_cache/
+
+# qwen-agent 的文档解析缓存与中间产物（可随时重建）
+workspace/
+
+# 本地密钥，不要提交
+.env

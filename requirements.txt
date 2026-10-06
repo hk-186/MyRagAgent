@@ -1,0 +1,14 @@
+# 运行本项目所需的依赖
+# 安装：pip install -r requirements.txt
+#
+# 版本与开发环境一致（Python 3.11），升级 qwen-agent 前请先读
+# rag/knowledge_retrieval.py 里关于解析缓存 bug 的说明。
+
+qwen-agent==0.0.19     # Agent 框架（FnCallAgent / DocParser / HybridSearch）
+dashscope>=1.20.0      # qwen-plus 的调用通道，读环境变量 DASHSCOPE_API_KEY
+pdfplumber>=0.11.0     # 解析 docs/ 下的 PDF
+jieba>=0.42.0          # 中文分词，BM25 关键词检索依赖
+gradio>=5.0.0,<6.0.0   # WebUI（只用命令行的话可以不装）
+
+# 开发/测试用
+pytest>=8.0.0
